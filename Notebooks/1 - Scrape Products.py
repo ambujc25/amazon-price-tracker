@@ -9,6 +9,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 # Use Selenium without opening the browser
+# Might have to disable the headless option if amazon starts askin for captcha
 options = Options()
 options.add_argument('--headless')
 browser = webdriver.Chrome(options = options)
